@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>   
+    <link rel="stylesheet" href="styles.css">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">        
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <h1 class="heading">NS Currency Converter</h1>
+            <!-- <p class="tagline">Innovative Solutions, Delivered</p>
+            <p class="bio">Passionate web designer and developer dedicated to crafting exceptional user experiences and innovative digital solutions.</p> -->
+        </div>
+    </header>
+    
+    <div class="container">
+    <h2>Currency Converter</h2>
+  
+    <form>
+    <div class="amount">
+        <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+    <div class="dropdown">
+    <div class="From">
+        <p>From</p>
+        <div class="select-container">
+            <img src="https://flagsapi.com/US/flat/64.png">
+            <select name="from">
+               
+            </select>
+        </div>
+    </div>
+    <i class="fa-solid fa-money-bill-transfer"></i>
+    <div class="To">
+        <p>To</p>
+        <div class="select-container">
+            <img src="https://flagsapi.com/PK/flat/64.png">
+            <select name="To">
+               
+            </select>
+        </div>
+    </div>
+</div>
+<div class="msg">1 USD IS EQUAL TO 286PKR</div>
+<button>Get Exchange Rate</button>
+</form>
+</div>
+
+<footer>
+    <div class="footer-wrapper">
+        <p>Contact Me</p>
+        <div class="contact-buttons">
+            <div class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:youremail@example.com" class="contact-link">Gmail</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui" class="contact-link" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/hafeezsiddiqui27" class="contact-link" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="additional-links">
+            <a href="https://yourwebsite.com" class="additional-link" target="_blank">Visit My Website</a>
+            <a href="https://yourportfolio.com" class="additional-link" target="_blank">View My Portfolio</a>
+        </div>
+        <p class="copyright">© 2024 Hafeez Siddiqui. All rights reserved.</p>
+    </div>
+</footer>
+<!-- <footer>
+<div class="footer"> 
+    
+ <div class="wrapper">
+  
+ <p>Contact me</p>
+    <div class="buttons">
+        <div class="icon" id="gmail">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:youremail@example.com" class="email-link">Gmail</a>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="icon" id="linkedin">
+            <i class="fa-brands fa-linkedin" ></i>
+            <a href="https://www.linkedin.com/in/hafeez-uddin-ahmed-siddiqui" class="linkedin-link" target="_blank">Linkedin</a>
+        </div>
+    </div>
+    <div class="buttons" id="github">
+        <div class="icon">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/hafeezsiddiqui27" class="github-link" target="_blank">GitHub</a>
+        </div>
+    </div> 
+
+</div>  -->
+<!-- <p id="copyright">Created By Hafeez Siddiqui</p> --!-->
+<!-- </footer>  -->
+ 
+<script src="countries.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

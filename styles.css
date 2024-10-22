@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(image.png);
+  image
+  /* Basic reset and font setup */
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header Styles */
+  header {
+    /* background: linear-gradient(135deg, #283c86, #45a247); Updated colors for a professional look */
+    /* background: linear-gradient(135deg, #434343, #000000); */
+    background-color: transparent;
+    color: black;
+    height: 100px; /* Reduced max-height */
+    padding: 0 10px; /* Adjust padding */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative;
+    overflow: hidden; /* Ensure content does not overflow */
+    width: 100%;
+  }
+  
+  .header-wrapper {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .header-wrapper h1 {
+    font-size: 1.4rem; /* Adjusted font size for smaller height */
+    margin-bottom: 2px; /* Reduced margin */
+    font-size: 40px;
+  }
+  
+  .header-wrapper .tagline {
+    font-size: 0.8rem; /* Adjusted font size */
+    font-weight: 300;
+    margin-bottom: 2px; /* Reduced margin */
+  }
+  
+  .header-wrapper .bio {
+    display: none; /* Hide bio text to fit within height constraint */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 6px 12px; /* Adjusted padding */
+    font-size: 0.8rem; /* Adjusted font size */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+ 
+}
+h2 {
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.container {
+  background-color: #bf0603;
+  padding: 2rem;
+  line-height: 20px;
+  border-radius: 1rem;
+  min-height: 50vh;
+  width: 50vh;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+form {
+  padding: 2rem 0 1rem 0;
+}
+
+form input,
+button,
+select {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0.75rem;
+}
+form input {
+  border: 2px solid #708d81;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container select {
+  font-size: 1rem;
+  width: auto;
+}
+
+.msg {
+  padding: 2rem 0 2rem 0;
+}
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border: 2px solid lightgray;
+  border-radius: 0.5rem;
+}
+i {
+  padding-top: 20px;
+  margin: 10px;
+  font-size: 40px;
+}
+
+form button {
+  height: 3rem;
+  background-color: #91c499;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(135deg, #434343, #000000);
+  color: #fff;
+  padding: 10px 10px; /* Adjusted padding */
+  text-align: center;
+  position: relative;
+  margin-top: auto; /* Pushes footer to the bottom */
+  width: 100%;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-wrapper p {
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px; /* Reduced gap */
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10px; /* Reduced margin */
+}
+.contact-buttons a{
+margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Reduced gap */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-item i {
+  font-size: 1.3rem; /* Adjusted icon size */
+}
+
+.contact-link {
+  color: #fff;
+  font-size: 0.9rem; /* Adjusted font size */
+}
+
+.contact-item:hover {
+  transform: scale(1.1);
+  color: #dcdcdc;
+}
+
+.contact-link:hover {
+  color: #dcdcdc;
+}
+
+.additional-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Reduced gap */
+  flex-wrap: wrap;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.additional-link {
+  color: #fff;
+  font-size: 0.9rem; /* Adjusted font size */
+  font-weight: 500;
+}
+
+.additional-link:hover {
+  text-decoration: underline;
+}
+
+.footer-wrapper .copyright {
+  font-size: 0.8rem; /* Adjusted font size */
+  opacity: 0.8;
+}
+.heading{
+  background: transparent;
+}
+
+/* Tablets and Smaller Laptops */
+@media (max-width: 1024px) {
+  .header-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .header-wrapper .tagline {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .dropdown {
+    flex-direction: row; /* Ensure select options stay in a row */
+  }
+
+  .select-container {
+    width: auto;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .header-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-wrapper .tagline {
+    font-size: 0.8rem;
+  }
+
+  .cta-button {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .contact-buttons,
+  .additional-links {
+    flex-direction: row; /* Keep social icons in a row */
+  }
+
+  .dropdown {
+    flex-direction: column; /* Stack select options vertically on smaller screens */
+  }
+
+  .select-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .header-wrapper h1 {
+    font-size: 1.2rem;
+  }
+
+  .header-wrapper .tagline {
+    font-size: 0.7rem;
+  }
+
+  .cta-button {
+    font-size: 0.6rem;
+    padding: 4px 8px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0.5rem;
+  }
+
+  .contact-buttons a {
+    margin-top: 10px;
+  }
+
+  .dropdown {
+    flex-direction: column; /* Ensure dropdown options are stacked on extra small screens */
+  }
+
+  .select-container {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .msg {
+    font-size: 0.9rem;
+  }
+}
